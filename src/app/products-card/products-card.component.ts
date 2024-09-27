@@ -1,12 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
+export { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-products-card',
-  standalone: true,
-  imports: [],
   templateUrl: './products-card.component.html',
-  styleUrl: './products-card.component.css'
+  styleUrls: ['./products-card.component.css']
 })
 export class ProductsCardComponent {
+  @Input() product: any;
+  @Output() addToCartEvent = new EventEmitter<any>();
 
+  addToCart() {
+    this.addToCartEvent.emit(this.product);
+  }
 }
