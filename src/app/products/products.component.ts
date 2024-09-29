@@ -1,11 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { CartService } from '../cart.service';
 import { AppModule } from '../app.module';
+import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 
 
 @Component({
   selector: 'app-products',
-  imports: [AppModule],
+  imports: [AppModule,CommonModule],
   standalone: true,
   templateUrl: './products.component.html',
   styleUrls: ['./products.component.css']
