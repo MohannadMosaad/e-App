@@ -1,1 +1,11 @@
-<p>cart works!</p>
+<div class="container">
+  <h2>Your Cart</h2>
+  <ul class="list-group">
+    <li class="list-group-item">
+      @for (item of cartItems; track item.id) {
+        {{ item.name }} - ${{ item.price }}
+      }
+    </li>
+  </ul>
+  <button (click)="clearCart()" class="btn btn-danger mt-3">Clear Cart</button>
+</div>
