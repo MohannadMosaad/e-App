@@ -1,12 +1,18 @@
-<form (submit)="addProduct()">
+<form (submit)="addProduct(productForm)" #productForm="ngForm">
     <div class="form-group">
         <label>Product Name</label>
-        <input type="text" [(ngModel)]="newProduct.name" class="form-control" name="name"/>
+        <input type="text" [(ngModel)]="newProduct.name" class="form-control" name="name" id="name" #name="ngModel" required/>
+        <div class="text-danger" *ngIf="name.invalid && (name.dirty || name.touched)">
+            <span>Name is Required</span>
+        </div>
     </div>
     <div class="form-grpup">
         <label>Product price</label>
-        <input type="number" [(ngModel)]="newProduct.price" class="form-control" name="price"/>
+        <input type="number" [(ngModel)]="newProduct.price" class="form-control" name="price" min="10" id="price" #price="ngModel"/>
+        <div class="text-danger" *ngIf="price.invalid && (price.dirty || price.touched)">
+            <span>Minimum price is 10</span>
+        </div>
     </div>
 
-    <button type="submit" class="btn btn-success" >Add Product</button>
+    <button type="submit" class="btn btn-success" [disabled]="productForm.invalid">Add Product</button>
 </form>

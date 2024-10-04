@@ -15,7 +15,7 @@ export const routes: Routes = [
 { path: 'about', component: AboutComponent },
 {path: 'cart', component: CartComponent},
 { path: 'contact', component: ContactComponent }, 
-{path:'Admin',component:ViewProductsComponent},
+{path:'admin',component:ViewProductsComponent},
 {path:'add-product',component:AddProductComponent},
 { path: 'login', component: LoginComponent },
 {path: '**', redirectTo: ''}

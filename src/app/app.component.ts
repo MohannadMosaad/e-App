@@ -7,11 +7,11 @@ import { HeaderComponent } from "./header/header.component";
 import { ProductsCardComponent } from "./products-card/products-card.component";
 import { CartComponent } from "./cart/cart.component";
 import { LoginComponent } from "./login/login.component";
-
+import { ViewProductsComponent } from './view-products/view-products.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CommonModule, HomeComponent, FooterComponent, HeaderComponent, CartComponent, LoginComponent],
+  imports: [RouterOutlet, CommonModule, HomeComponent, FooterComponent, HeaderComponent, CartComponent, LoginComponent,ViewProductsComponent,],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

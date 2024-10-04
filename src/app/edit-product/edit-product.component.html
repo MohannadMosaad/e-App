@@ -1,0 +1,21 @@
+<form [formGroup]="productFrom" (submit)="saveChanges()">
+    <div class="form-group">
+        <label>Product Name</label>
+        <input type="text" class="form-control" formControlName="productName">
+        <div class="text-danger" *ngIf="productFrom.controls.productName.invalid && (productFrom.controls.productName.dirty || productFrom.controls.productName.touched)">
+            <span *ngIf="productFrom.controls.productName.hasError('required')">Name is required</span>
+            <span *ngIf="productFrom.controls.productName.hasError('minLength')">Name must be at least 4 charchters</span>
+        </div>
+        
+    </div>
+    <div class="form-grpup">
+        <label>Product price</label>
+        <input type="number" class="form-control" formControlName="productPrice" />
+        <div class="text-danger" *ngIf="productFrom.controls.productPrice.invalid && (productFrom.controls.productPrice.dirty || productFrom.controls.productPrice.touched)">
+            <span *ngIf="productFrom.controls.productPrice.hasError('required')">price is required</span>
+            <span *ngIf="productFrom.controls.productPrice.hasError('min')">Value must be 10 at least</span>
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-success" [disabled]="productFrom.invalid">Save Changes</button>
+</form>
