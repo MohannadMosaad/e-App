@@ -1,0 +1,57 @@
+.about-page {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .about-page h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #343a40;
+  }
+  
+  .about-page h2 {
+    font-size: 1.75rem;
+    color: #055819; /* لون أخضر للنصوص داخل h2 */
+  }
+  
+  .about-page p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  .about-page .lead {
+    font-size: 1.2rem;
+    color: #6c757d;
+  }
+  
+  .about-page img {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-page .btn-success {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    background-color: #055819; /* لون أخضر */
+    border-color: #055819;
+  }
+  
+  .about-page .btn-success:hover {
+    background-color: #055819;
+    border-color: #055819;
+  }
+  
+  @media (max-width: 768px) {
+    .about-page h1 {
+      font-size: 2rem;
+    }
+  
+    .about-page h2 {
+      font-size: 1.5rem;
+    }
+  
+    .about-page p {
+      font-size: 1rem;
+    }
+  }
+  

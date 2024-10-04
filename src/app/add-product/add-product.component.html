@@ -1,0 +1,12 @@
+<form (submit)="addProduct()">
+    <div class="form-group">
+        <label>Product Name</label>
+        <input type="text" [(ngModel)]="newProduct.name" class="form-control" name="name"/>
+    </div>
+    <div class="form-grpup">
+        <label>Product price</label>
+        <input type="number" [(ngModel)]="newProduct.price" class="form-control" name="price"/>
+    </div>
+
+    <button type="submit" class="btn btn-success" >Add Product</button>
+</form>

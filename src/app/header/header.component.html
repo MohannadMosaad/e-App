@@ -8,12 +8,19 @@
               <i class="fa fa-phone mx-2"></i>
               <a class="navbar-sm-brand text-light text-decoration-none" href="#">010-000-0000</a>
           </div>
+          
+        
           <div>
               <a class="text-light" href="#" target="_blank" rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
               <a class="text-light" href="#" target="_blank"><i class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
               <a class="text-light" href="#" target="_blank"><i class="fab fa-twitter fa-sm fa-fw me-2"></i></a>
               <a class="text-light" href="#" target="_blank"><i class="fab fa-linkedin fa-sm fa-fw"></i></a>
+              
+
           </div>
+          <div class="login-container">
+            <a  routerLink="/login" class="login-link">Login</a>
+        </div>
       </div>
   </div>
 </nav>
@@ -41,6 +48,9 @@
                 <li class="nav-item">
                   <a class="nav-link" routerLink="/about">About</a>
                 </li>
+                <li class="nav-item">                   
+                  <a class="nav-link" routerLink="/Admin">Admin</a>
+                </li>
                 <li class="nav-item">
                   <a class="nav-link" routerLink="/products">Products</a>
                 </li>
@@ -50,16 +60,25 @@
                 <li class="nav-item">
                   <a class="nav-link" routerLink="/contact">Contact</a>
                 </li>
+                
+                <button mat-button>
+                    <mat-icon>shopping_cart</mat-icon>
+    
+                  </button>
               </ul>
+
+              
           </div>
           <div class="navbar align-self-center d-flex">
               <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
                   <div class="input-group">
+                    
                       <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
                       <div class="input-group-text">
                           <i class="fa fa-fw fa-search"></i>
                       </div>
                   </div>
+                  
               </div>
               <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#template_search">
                   <i class="fa fa-fw fa-search text-dark mr-2"></i>
