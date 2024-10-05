@@ -1,5 +1,5 @@
 <!-- Start Top Nav -->
-<nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="template_nav_top">
+<!-- <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="template_nav_top">
   <div class="container text-light">
       <div class="w-100 d-flex justify-content-between">
           <div>
@@ -23,19 +23,19 @@
         </div>
       </div>
   </div>
-</nav>
+</nav> -->
 <!-- Close Top Nav -->
 
 
 <!-- Header -->
-<nav class="navbar navbar-expand-lg navbar-light shadow">
+<nav class="navbar navbar-main navbar-expand-lg navbar-light ">
   <div class="container d-flex justify-content-between align-items-center">
 
       <a class="navbar-brand text-success logo h1 align-self-center" href="#">
           E-Shop
       </a>
 
-      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#template_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -43,57 +43,45 @@
           <div class="flex-fill">
               <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
                 <li class="nav-item">
-                  <a class="nav-link" routerLink="/">Home</a>
+                  <a class=" nav-link btn btn-outline-success " routerLink="/">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" routerLink="/about">About</a>
+                  <a class="nav-link btn btn-outline-success" routerLink="/about">About</a>
                 </li>
                 <li class="nav-item">                   
-                  <a class="nav-link" routerLink="/admin">admin</a>
+                  <a class="nav-link btn btn-outline-success" routerLink="/admin">admin</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" routerLink="/products">Products</a>
+                  <a class="nav-link btn btn-outline-success" routerLink="/products">Products</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" routerLink="/cart">Cart</a>
+                  <a class="nav-link btn btn-outline-success" routerLink="/cart">Cart</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" routerLink="/contact">Contact</a>
+                  <a class="nav-link btn btn-outline-success" routerLink="/contact">Contact</a>
                 </li>
                 
-                <button mat-button>
-                    <mat-icon>shopping_cart</mat-icon>
-    
+                <button  class="shooping-icon btn  ">
+                    <mat-icon >shopping_cart</mat-icon>
                   </button>
               </ul>
-
               
           </div>
           <div class="navbar align-self-center d-flex">
               <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
                   <div class="input-group">
-                    
                       <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
                       <div class="input-group-text">
                           <i class="fa fa-fw fa-search"></i>
                       </div>
                   </div>
-                  
               </div>
               <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#template_search">
                   <i class="fa fa-fw fa-search text-dark mr-2"></i>
               </a>
-              <!-- <a class="nav-icon position-relative text-decoration-none" href="#">
-                  <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
-                  <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
-              </a> -->
-              <!-- <a class="nav-icon position-relative text-decoration-none" href="#">
-                  <i class="fa fa-fw fa-user text-dark mr-3"></i>
-                  <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+99</span>
-              </a> -->
           </div>
       </div>
-
+        <a class="btn btn-outline-success" routerLink="/login">Login</a>
   </div>
 </nav>
 <!-- Close Header -->

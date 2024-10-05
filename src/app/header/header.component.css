@@ -5,16 +5,25 @@
 }
 
 .login-link {
-  color: white;
+  color: black;
   font-weight: bold;
   text-decoration: none;
   font-size: 18px;
   margin: 10px;
   transition: color 0.3s;
+
 }
 
 .login-link:hover {
   color: darkgreen;
   text-decoration: underline;
+}
+
+
+.navbar-main {
+  background-color: white;
+}
+.nav-item .a:hover {
+  color: white;
 }
 
