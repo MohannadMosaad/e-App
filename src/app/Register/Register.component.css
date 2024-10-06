@@ -1,0 +1,32 @@
+.container {
+    background-color: #f8f9fa; 
+    border-radius: 10px; 
+  }
+  
+  form {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  }
+  
+  h2 {
+    color: #055819; 
+  }
+   
+.forstAndLastName {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.forstNameOnly {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.secondNameOnly {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}

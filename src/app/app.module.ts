@@ -6,12 +6,13 @@ import { ProductsCardComponent } from './products-card/products-card.component';
 import { app } from '../../server';
 import { truncate } from 'fs';
 import { TruncatePipe } from './pips/truncate.pipe';
+import { RegisterComponent } from './Register/Register.component';
 
 @NgModule({
-  declarations: [
+  declarations: [	
     TruncatePipe,
-    ProductsCardComponent
-  ],
+    ProductsCardComponent,
+   ],
   exports: [ProductsCardComponent],
   imports: [],
   providers: [],

@@ -1,9 +1,15 @@
-<div class="container d-flex justify-content-center align-items-center vh-100">
-  <form #loginForm="ngForm" (ngSubmit)="onLogin(loginForm)"
-    class="border p-4 shadow rounded bg-light" style="width: 300px;">
-    <h2 class="text-center mb-4"> Login</h2>
+<div
+  class="container-fluid d-flex justify-content-center align-items-center vh-100 shadow"
+>
+  <form
+    #loginForm="ngForm"
+    (ngSubmit)="onLogin(loginForm)"
+    class="border p-4 shadow rounded bg-light"
+    style="width: 600px"
+  >
+    <h2 class="text-center mb-4">Login</h2>
     <div class="mb-3">
-      <label for="email" class="form-label">G-mail :</label>
+      <label for="email" class="form-label">Email :</label>
       <input
         type="text"
         id="email"
@@ -11,12 +17,16 @@
         ngModel
         required
         class="form-control"
-        #email="ngModel" />
-      <div *ngIf="email.invalid && (email.dirty || email.touched)"
-        class="text-danger">
+        #email="ngModel"
+      />
+      <div
+        *ngIf="email.invalid && (email.dirty || email.touched)"
+        class="text-danger"
+      >
         <div *ngIf="email.errors?.['required']">Email is required .</div>
-        <div *ngIf="email.errors?.['pattern']"> Please enter a valid email
-          address .</div>
+        <div *ngIf="email.errors?.['pattern']">
+          Please enter a valid email address .
+        </div>
       </div>
     </div>
     <div class="mb-3">
@@ -29,16 +39,21 @@
         required
         minlength="3"
         class="form-control"
-        #password="ngModel" />
-      <div *ngIf="password.invalid && (password.dirty || password.touched)"
-        class="text-danger">
-        <div *ngIf="password.errors?.['required']"> Password required .</div>
-        <div *ngIf="password.errors?.['minlength']"> The password must be at
-          least 3 numbers.</div>
-        <div *ngIf="password.errors?.['pattern']"> The password must contain
-          numbers only.</div>
+        #password="ngModel"
+      />
+      <div
+        *ngIf="password.invalid && (password.dirty || password.touched)"
+        class="text-danger"
+      >
+        <div *ngIf="password.errors?.['required']">Password required .</div>
+        <div *ngIf="password.errors?.['minlength']">
+          The password must be at least 3 numbers.
+        </div>
+        <div *ngIf="password.errors?.['pattern']">
+          The password must contain numbers only.
+        </div>
       </div>
     </div>
-    <button type="submit" class="btn btn-success  w-100">Login </button>
+    <button type="submit" class="btn btn-success w-100">Login</button>
   </form>
 </div>

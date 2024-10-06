@@ -6,8 +6,8 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
 import { AddProductComponent } from './add-product/add-product.component';
-import { Component } from '@angular/core';
 import { ViewProductsComponent } from './view-products/view-products.component';
+import { RegisterComponent } from './Register/Register.component';
 
 export const routes: Routes = [
 {path: '', component: HomeComponent},
@@ -18,5 +18,6 @@ export const routes: Routes = [
 {path:'admin',component:ViewProductsComponent},
 {path:'add-product',component:AddProductComponent},
 { path: 'login', component: LoginComponent },
+{ path: 'register', component: RegisterComponent },
 {path: '**', redirectTo: ''}
 ];
