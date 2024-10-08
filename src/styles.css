@@ -46,6 +46,30 @@ body, ul, li, p, a, label, input, div {
 
   /* Hero Carousel */
   #template-mo-jassa-hero-carousel { background: #efefef !important;}
+  .banner {
+    padding-block: 4rem;
+    overflow: hidden;
+    background-color:green;
+  }
+  
+  .banner__container {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+  
+    animation: scroll 25s linear infinite;
+  }
+  
+  .banner__container img {
+    height: 70px;
+  }
+  
+  @keyframes scroll {
+    to {
+      transform: translateX(calc(-50% - 4rem));
+    }
+  }
   /* Accordion */
   .template-accordion a { color: #000;}
   .template-accordion a:hover { color: #333d4a;}
