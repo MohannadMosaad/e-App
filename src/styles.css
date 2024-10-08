@@ -40,7 +40,7 @@ body, ul, li, p, a, label, input, div {
   /* Nav */
   #template_nav_top { min-height: 40px;}
   #template_nav_top * { font-size: 12px !important;}
-  #template_main_nav a { color: #212934;}
+  #template_main_nav a { color: black;}
   #template_main_nav a:hover { color: white;}
   #template_main_nav .navbar .nav-icon { margin-right: 20px;}
 
