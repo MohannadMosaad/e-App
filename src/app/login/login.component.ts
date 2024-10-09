@@ -13,7 +13,6 @@ import { Router, RouterLink } from '@angular/router';
 
 export class LoginComponent {
 
-  isLogInDataValid:boolean = true
   constructor(private router: Router) {}
 addProduct(_t5: NgForm) {
 throw new Error('Method not implemented.');
@@ -24,7 +23,6 @@ throw new Error('Method not implemented.');
       this.router.navigate(["/layout"])
     } else {
       console.log('  Please check that the data is entered correctly.    .');
-      this.isLogInDataValid = false
     }
   }
   onSubmit() {  

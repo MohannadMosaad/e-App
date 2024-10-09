@@ -11,3 +11,10 @@
     color: #055819; 
   }
   
+  .ng-valid:not(form) {
+    border-left:5px solid #055819;
+  }
+  .ng-invalid:not(form) {
+    border-left:5px solid red;
+  }
+

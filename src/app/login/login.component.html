@@ -1,5 +1,5 @@
 <div class="container-fluid d-flex justify-content-between align-items-center vh-100 shadow flex-column">
-  <div class="d-flex justify-content-between align-items-start   w-100 ">
+  <div class="d-flex justify-content-between align-items-start   w-100  ">
     <a class="navbar-brand text-success logo h1 m-3  " href="#">E-Shop</a>
     <a class="btn btn-outline-success m-3 " routerLink="/register">Register</a>
   </div>
@@ -7,7 +7,7 @@
     #loginForm="ngForm"
     (ngSubmit)="onLogin(loginForm)"
     class="border p-4 shadow rounded bg-light mb-4"
-    style="width: 400px; height:400px;"
+    style="width: 400px; height:500px;"
   >
     <h2 class="text-center mb-4">Login</h2>
     <div class="mb-3">
@@ -18,16 +18,13 @@
         name="email"
         ngModel
         required
+        pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
         class="form-control"
         #email="ngModel"
       />
-      <div
-        *ngIf="email.invalid && (email.dirty || email.touched)"
-        class="text-danger"
-      >
-        <div *ngIf="email.errors?.['pattern']">
-          Please enter a valid email address .
-        </div>
+      <div class="alert alert-danger" [hidden]="email.valid || email.untouched">
+        <small *ngIf="email.errors?.['required']">Email Required</small>
+        <small *ngIf="email.errors?.['pattern']">Enter a valid Email</small>
       </div>
     </div>
     <div class="mb-3">
@@ -38,23 +35,15 @@
         name="password"
         ngModel
         required
-        minlength="3"
+        minlength="5"
         class="form-control"
         #password="ngModel"
       />
-      <div
-        *ngIf="password.invalid && (password.dirty || password.touched)"
-        class="text-danger"
-      >
-        <div *ngIf="password.errors?.['minlength']">
-          The password must be at least 3 numbers.
-        </div>
-        <div *ngIf="password.errors?.['pattern']">
-          The password must contain numbers only.
-        </div>
+      <div class="alert alert-danger"   [hidden]="password.valid || password.untouched">
+        <small  *ngIf="password.errors?.['required']">Invalid Password</small>
+        <small *ngIf="password.errors?.['minlength']">Password Must Be More Than 5 Characters</small>
       </div>
-      <p *ngIf="!isLogInDataValid" class="text-danger">Invalid login data. Please check your inputs.</p>
     </div>
-    <button type="submit" class="btn btn-success w-100 mt-4" router-link="/home">Login</button>
+    <button type="submit" class="btn btn-success w-100 mt-5" >Login</button>
   </form>
 </div>
