@@ -55,15 +55,21 @@
                   <a class="nav-link btn btn-outline-success" routerLink="/products">Products</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link btn btn-outline-success" routerLink="/cart">Cart</a>
+                  <a class="nav-link btn btn-outline-success" >Cart</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link btn btn-outline-success" routerLink="/contact">Contact</a>
                 </li>
+                  
+                <button class="shopping-icon btn" (click)="goToCart()">
+                  <mat-icon>shopping_cart</mat-icon>
+                  <span *ngIf="count > 0" class="cart-count">{{ count }}</span> <!-- الرقم يظهر فقط إذا كان count أكبر من 0 -->
+                </button>
                 
-                <button  class="shooping-icon btn  ">
-                    <mat-icon >shopping_cart</mat-icon>
-                  </button>
+                
+                
+                
+
               </ul>
               
           </div>

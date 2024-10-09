@@ -27,3 +27,18 @@
   color: white;
 }
 
+.shopping-icon {
+  position: relative;
+}
+
+.cart-count {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 4px 8px;
+  font-size: 14px;
+  position: absolute;
+  top: -5px;
+  right: -10px;
+}
+
