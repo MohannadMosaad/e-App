@@ -6,17 +6,19 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
 import { AddProductComponent } from './add-product/add-product.component';
-import { ViewProductsComponent } from './view-products/view-products.component';
 import { RegisterComponent } from './Register/Register.component';
+import { MainLayoutComponent } from './mainLayout/mainLayout.component';
 
 export const routes: Routes = [
-{path: '', component: HomeComponent},
-{path: 'products', component: ProductsComponent},
-{ path: 'about', component: AboutComponent },
-{path: 'cart', component: CartComponent},
-{ path: 'contact', component: ContactComponent }, 
-{path:'admin',component:ViewProductsComponent},
-{path:'add-product',component:AddProductComponent},
+{path: '', component: LoginComponent},
+{path: 'layout', component: MainLayoutComponent, children:[
+    {path: '', component: HomeComponent},
+    {path: 'products', component: ProductsComponent},
+    { path: 'about', component: AboutComponent },
+    {path: 'cart', component: CartComponent},
+    { path: 'contact', component: ContactComponent }, 
+    {path:'add-product',component:AddProductComponent},
+]},
 { path: 'login', component: LoginComponent },
 { path: 'register', component: RegisterComponent },
 {path: '**', redirectTo: ''}

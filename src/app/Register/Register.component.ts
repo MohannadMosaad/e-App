@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
+import { RouterLink } from '@angular/router';
 import { log } from 'console';
 
 @Component({
@@ -8,7 +9,7 @@ import { log } from 'console';
   templateUrl: './Register.component.html',
   styleUrls: ['./Register.component.css'], 
   standalone:true,
-  imports:[CommonModule, FormsModule]
+  imports:[CommonModule, FormsModule, RouterLink]
 })
 export class RegisterComponent implements OnInit {
   password!: string;

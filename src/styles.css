@@ -40,12 +40,36 @@ body, ul, li, p, a, label, input, div {
   /* Nav */
   #template_nav_top { min-height: 40px;}
   #template_nav_top * { font-size: 12px !important;}
-  #template_main_nav a { color: #212934;}
+  #template_main_nav a { color: black;}
   #template_main_nav a:hover { color: white;}
   #template_main_nav .navbar .nav-icon { margin-right: 20px;}
 
   /* Hero Carousel */
   #template-mo-jassa-hero-carousel { background: #efefef !important;}
+  .banner {
+    padding-block: 4rem;
+    overflow: hidden;
+    background-color:green;
+  }
+  
+  .banner__container {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+  
+    animation: scroll 25s linear infinite;
+  }
+  
+  .banner__container img {
+    height: 70px;
+  }
+  
+  @keyframes scroll {
+    to {
+      transform: translateX(calc(-50% - 4rem));
+    }
+  }
   /* Accordion */
   .template-accordion a { color: #000;}
   .template-accordion a:hover { color: #333d4a;}

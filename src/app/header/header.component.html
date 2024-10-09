@@ -43,22 +43,19 @@
           <div class="flex-fill">
               <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
                 <li class="nav-item">
-                  <a class=" nav-link btn btn-outline-success " routerLink="/">Home</a>
+                  <a class=" nav-link btn btn-outline-success " routerLink="/layout/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link btn btn-outline-success" routerLink="/about">About</a>
-                </li>
-                <li class="nav-item">                   
-                  <a class="nav-link btn btn-outline-success" routerLink="/admin">admin</a>
+                  <a class="nav-link btn btn-outline-success" routerLink="/layout/about" routerLinkActive="active">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link btn btn-outline-success" routerLink="/products">Products</a>
+                  <a class="nav-link btn btn-outline-success" routerLink="/layout/products" routerLinkActive="active">Products</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link btn btn-outline-success" >Cart</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link btn btn-outline-success" routerLink="/contact">Contact</a>
+                  <a class="nav-link btn btn-outline-success" routerLink="/layout/contact" routerLinkActive="active">Contact</a>
                 </li>
                   
                 <button class="shopping-icon btn" (click)="goToCart()">

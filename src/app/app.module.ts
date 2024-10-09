@@ -7,9 +7,10 @@ import { app } from '../../server';
 import { truncate } from 'fs';
 import { TruncatePipe } from './pips/truncate.pipe';
 import { RegisterComponent } from './Register/Register.component';
+import { MainLayoutComponent } from './mainLayout/mainLayout.component';
 
 @NgModule({
-  declarations: [	
+  declarations: [		
     TruncatePipe,
     ProductsCardComponent,
    ],
