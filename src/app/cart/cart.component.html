@@ -1,11 +1,10 @@
-<div class="container">
-  <h2>Your Cart</h2>
-  <ul class="list-group">
-    <li class="list-group-item">
-      @for (item of cartItems; track item.id) {
-        {{ item.name }} - ${{ item.price }}
-      }
-    </li>
-  </ul>
-  <button (click)="clearCart()" class="btn btn-danger mt-3">Clear Cart</button>
+<div *ngFor="let product of cartItems" class="card mb-4">
+  <img [src]="product.image" class="card-img-top card-image" alt="Product image">
+  <div class="card-body">
+    <h5 class="card-title">{{ product.title | truncate: 5 }}</h5>
+    <p class="card-text">{{ product.description | truncate: 10 }}</p>
+    <p class="card-text">Price: ${{ product.price }}</p>
+  </div>
 </div>
+
+<button (click)="clearCart()" class="btn btn-danger">Clear Cart</button>

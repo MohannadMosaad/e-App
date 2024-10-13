@@ -51,16 +51,17 @@
                 <li class="nav-item">
                   <a class="nav-link btn btn-outline-success" routerLink="/layout/products" routerLinkActive="active">Products</a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                   <a class="nav-link btn btn-outline-success"  routerLink="/layout/cart" routerLinkActive="active">Cart</a>
-                </li>
+                </li> -->
                 <li class="nav-item">
                   <a class="nav-link btn btn-outline-success" routerLink="/layout/contact" routerLinkActive="active">Contact</a>
                 </li>
                   
-                <button class="shopping-icon btn" (click)="goToCart()">
+                <button class="shopping-icon btn" routerLink="/layout/cart" routerLinkActive="active">
                   <mat-icon>shopping_cart</mat-icon>
-                  <span *ngIf="count > 0" class="cart-count">{{ count }}</span> <!-- الرقم يظهر فقط إذا كان count أكبر من 0 -->
+                  <span *ngIf="cartItemCount > 0" class="cart-count">{{ cartItemCount }}</span>
+
                 </button>
                 
                 

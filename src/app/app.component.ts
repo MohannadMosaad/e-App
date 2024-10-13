@@ -11,7 +11,7 @@ import { MainLayoutComponent } from "./mainLayout/mainLayout.component";
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CommonModule, HomeComponent, FooterComponent, HeaderComponent, CartComponent, LoginComponent, RegisterComponent, MainLayoutComponent,RouterLinkActive],
+  imports: [RouterOutlet, CommonModule, HomeComponent, FooterComponent, HeaderComponent, CartComponent, LoginComponent, RegisterComponent, MainLayoutComponent,RouterLinkActive ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

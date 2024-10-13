@@ -1,0 +1,13 @@
+/* cart.component.css */
+.card-image {
+    max-width: 100%;  /* Ensures the image does not exceed the width of its container */
+    height: auto;     /* Maintains the aspect ratio of the image */
+  }
+  
+  /* You can also add specific dimensions if needed */
+  .card-img-top {
+    width: 150px;   /* Set a fixed width */
+    height: 150px;  /* Set a fixed height */
+    object-fit: cover; /* Ensures the image covers the specified dimensions without distortion */
+  }
+  

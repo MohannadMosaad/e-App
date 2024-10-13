@@ -11,11 +11,14 @@ export { CommonModule } from '@angular/common';
 })
 export class ProductsCardComponent {
   count: number | undefined;
+  cartItems: any;
+  cartService: any;
 
   clearCart() {
     this.cartStateService.clearCart(); 
     this.count = 0; 
     this.cartStateService.clearCart();
+  
   }
   
 cardStateService: any;
