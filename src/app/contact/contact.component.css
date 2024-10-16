@@ -10,7 +10,7 @@
   
   .contact-page h2 {
     font-size: 1.75rem;
-    color: #055819; /* لون أخضر للعناوين */
+    color: #055819; 
   }
   
   .contact-page p {
@@ -23,24 +23,24 @@
     padding: 10px 20px;
     font-size: 1rem;
     border-radius: 30px;
-    background-color: #055819; /* لون أخضر */
+    background-color: #055819; 
     border-color: #055819;
   }
   
   .contact-page .btn-success:hover {
-    background-color: #055819; /* لون أخضر داكن عند التمرير */
+    background-color: #055819; 
     border-color: #055819;
   }
   
   .contact-page .btn-outline-success {
-    color: #055819; /* لون الخط */
-    border-color: #055819; /* لون الإطار */
+    color: #055819; 
+    border-color: #055819; 
   }
   
   .contact-page .btn-outline-success:hover {
-    background-color: #055819; /* خلفية خضراء عند التمرير */
-    color: white; /* لون الخط أبيض عند التمرير */
-    border-color: #055819; /* لون الإطار داكن عند التمرير */
+    background-color: #055819; 
+    color: white; 
+    border-color: #055819; 
   }
   
   @media (max-width: 768px) {

@@ -38,5 +38,8 @@ cardStateService: any;
       this.cartStateService.addProduct(product)
     }
   }
+  removeProductFromCart(product: ProductModel) {
+    this.cartStateService.removeProduct(product);
+  }
   
 }

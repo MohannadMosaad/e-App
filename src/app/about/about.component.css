@@ -10,7 +10,7 @@
   
   .about-page h2 {
     font-size: 1.75rem;
-    color: #055819; /* لون أخضر للنصوص داخل h2 */
+    color: #055819; 
   }
   
   .about-page p {
@@ -32,7 +32,7 @@
     padding: 10px 20px;
     font-size: 1rem;
     border-radius: 30px;
-    background-color: #055819; /* لون أخضر */
+    background-color: #055819; 
     border-color: #055819;
   }
   
