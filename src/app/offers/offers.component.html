@@ -1,0 +1,12 @@
+<div class="container mt-4">
+    <h2 class="text-center mb-4">Special Offers</h2>
+    <div class="row">
+      <div *ngFor="let offer of offers" class="col-md-4">
+        <app-offer-card
+          [offer]="offer"
+          (addToCartEvent)="addToCart($event)">
+        </app-offer-card>
+      </div>
+    </div>
+  </div>
+  

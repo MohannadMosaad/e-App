@@ -4,7 +4,8 @@
     <h5 class="card-title">{{product.title | truncate: 5}}</h5>
     <p class="card-text">{{ product.description | truncate: 10 }}...</p> 
     <p class="card-text">Price: ${{product.price}}</p>
-    <button class="btn btn-primary" (click)="addToCart()"  (click)="addProductToCart(product)" >Add to Cart</button>
+    <button class="bi bi-cart btn btn-success" (click)="addToCart()"  (click)="addProductToCart(product)" >Add to Cart</button>
+    <button class="bi bi-cart-x btn btn-danger " (click)="removeProductFromCart(product)">Remove Product</button>
 
 
   </div>
