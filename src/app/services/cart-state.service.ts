@@ -20,12 +20,13 @@ export class CardStateService {
 
   removeProduct(product: ProductModel) {
     let currentProducts = this.productsSubject.value;
-    let index = currentProducts.indexOf(product);
+    let index = currentProducts.findIndex(p => p.id === product.id); 
     if (index >= 0) {
       currentProducts.splice(index, 1);
-      this.productsSubject.next(currentProducts); 
+      this.productsSubject.next(currentProducts);
     }
   }
+  
 
   isExist(product: ProductModel): boolean {
     let currentProducts = this.productsSubject.value;
